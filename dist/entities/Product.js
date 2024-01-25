@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Product {
+    constructor(name, description, price, inStock = 0) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.inStock = inStock;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.inStock = inStock;
+    }
+    addToStock(quantity) {
+        this.inStock += quantity;
+    }
+    removeFromStock(quantity) {
+        this.inStock -= quantity;
+    }
+}
+exports.default = Product;
